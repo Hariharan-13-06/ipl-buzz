@@ -1,0 +1,115 @@
+.points-table {
+    width: 90%;
+    min-width: max-content;
+    background: white;
+    box-shadow: 0 1px 5px 2px lightgray;
+    border-radius: 5px;
+}
+
+.points-table-title {
+    font-weight: 600;
+    color: #604652;
+    padding: 20px 20px 0px 20px;
+}
+.points-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.points-table-left-col {
+    display: flex;
+    align-items: center;
+}
+
+.points-table-header-right-col {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.points-table-body-right-col {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}   
+
+.points-table-left-col {
+    font-weight: 600;
+}
+
+.points-table-head-cell {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.points-table-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.points-table-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;;
+    padding: 10px 0;
+}
+
+.team-name {
+    font-size: large;
+    min-width: max-content;
+    display: flex;
+    align-items: center;
+    color: #604652;
+    font-weight: 600;
+    gap: 10px;
+}
+
+.points-table-row-cell {
+    padding: 10px;
+}
+
+.rcb, .lsg, .gt, .pbks, .dc, .srh, .kkr, .csk, .mi, .rr {
+    width: 30px;
+    height: 30px;
+    background-position: 100% 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.rcb {
+    background-image: url('../../assets/rcb.jpg');
+}
+
+.lsg {
+    background-image: url('../../assets/lsg.jpg');
+}
+
+.gt {
+    background-image: url('../../assets/gt.jpg');
+}
+
+.pbks {
+    background-image: url('../../assets/pbks.jpg');
+}
+.dc {
+    background-image: url('../../assets/dc.jpg');
+}
+.srh {
+    background-image: url('../../assets/srh.jpg');
+}
+.kkr {
+    background-image: url('../../assets/kkr.jpg');
+}
+.csk {
+    background-image: url('../../assets/csk.jpg');
+}
+.mi {
+    background-image: url('../../assets/mi.jpg');
+}
+.rr {
+    background-image: url('../../assets/rr.jpg');
+}

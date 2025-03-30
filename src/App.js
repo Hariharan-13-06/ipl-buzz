@@ -1,25 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import PointsTable from './pages/points-table/PointsTable';
+import UpcomingMatches from './pages/upcoming-matches/UpcomingMatches';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className='app-header'>Tata Indian Premier League 2025</div>
+      <UpcomingMatches />
+      <PointsTable />
     </div>
-  );
+  )
 }
 
 export default App;

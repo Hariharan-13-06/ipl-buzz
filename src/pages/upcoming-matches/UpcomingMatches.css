@@ -1,0 +1,72 @@
+.upcoming-matches {
+    width: 90%;
+    min-width: max-content;
+    padding: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 5px 2px lightgray;
+    border-radius: 5px;
+}
+
+.upcoming-matches-title {
+    color: #604652;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.upcoming-match-date {
+    color: #604652;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.upcoming-match-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.upcoming-match {
+    width: 100%;
+    padding: 15px 0;
+}
+
+.match-count {
+    font-size: 13px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+}
+
+.match-team-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.match-team {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.match-vs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-vs {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.match-time, .match-venue {
+    font-size: 13px;
+    color: #604652;
+}
