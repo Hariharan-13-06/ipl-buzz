@@ -4,6 +4,7 @@ import "./PointsTable.css";
 
 const PointsTable = () => {
     const [pointsTable, setPointsTable] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const fetchPointsTable = async () => {
@@ -17,6 +18,7 @@ const PointsTable = () => {
                 });
                 const data = await response.json();
                 setPointsTable(data.pointsTable[0].pointsTableInfo);
+                setLoading(false);
             } catch (error) {
                 console.error("Error fetching points table:", error);
             }
@@ -24,6 +26,10 @@ const PointsTable = () => {
 
         fetchPointsTable();
     }, []);
+
+    if (loading) {
+        return <div>Loading...</div>
+    }
 
   return (
     <div className="points-table">

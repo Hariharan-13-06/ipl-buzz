@@ -1,10 +1,11 @@
-import React, { useState, useEffect, use } from "react";
+import React, { useState, useEffect } from "react";
 
 import "./UpcomingMatches.css";
 import moment from "moment";
 
 const UpcomingMatches = () => {
     const [upcomingMatches, setUpcomingMatches] = useState([]);
+    const [loading, setLoading] = useState(true);
     const today = moment().format("DD MMM YYYY");
 
     useEffect(() => {
@@ -27,6 +28,7 @@ const UpcomingMatches = () => {
                     return match.matchDetailsMap?.key.split(",")[1].trim() == today;
                 })[0];
                 setUpcomingMatches(matches);
+                setLoading(false);
             } catch (error) {
                 console.error("Error fetching matches:", error);
             }
@@ -35,6 +37,10 @@ const UpcomingMatches = () => {
         fetchMatches();
     }, []);
     
+    if (loading) {
+        return <div>Loading...</div>
+    }
+
     return (
         <div className="upcoming-matches">
             <div className="upcoming-matches-title">Today Matches</div>
